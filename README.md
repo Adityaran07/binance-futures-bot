@@ -70,6 +70,42 @@ python cli.py --symbol SYMBOL --side BUY|SELL --type MARKET|LIMIT|STOP_MARKET \
               --quantity QTY [--price PRICE] [--stop-price STOP_PRICE] [--tif GTC|IOC|FOK]
 ```
 
+### Interactive Mode (Bonus — Enhanced CLI UX)
+
+Run a guided interactive session with menus, prompts, and inline validation:
+
+```bash
+python interactive.py
+```
+
+No flags needed — it walks you through everything step by step:
+- Loads credentials from environment variables automatically
+- Numbered menus for Side and Order Type
+- Inline validation with clear error messages on bad input
+- Confirmation prompt before placing any order
+- Colour-coded output (green for BUY, red for SELL)
+
+---
+
+### Run in Mock Mode (no testnet account needed)
+
+If the testnet is inaccessible (e.g. regional restrictions in India), use `--mock` flag:
+
+```bash
+# Mock MARKET order
+python cli.py --mock --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+
+# Mock LIMIT order
+python cli.py --mock --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 70000
+
+# Mock STOP_MARKET order
+python cli.py --mock --symbol ETHUSDT --side BUY --type STOP_MARKET --quantity 0.01 --stop-price 3200
+```
+
+Mock mode simulates real Binance API responses (same schema, realistic prices, order IDs) without making any network calls. All validation, logging, and error handling remain identical to live mode.
+
+---
+
 ### Place a MARKET order
 
 ```bash
