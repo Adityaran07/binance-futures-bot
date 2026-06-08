@@ -28,3 +28,81 @@
 2026-06-08 06:17:53 | DEBUG    | test | <module>:6 | Debug message
 2026-06-08 06:18:06 | ERROR    | __main__ | _abort:170 | API credentials missing. Set BINANCE_API_KEY / BINANCE_API_SECRET env vars, or pass --api-key / --api-secret.
 2026-06-08 06:18:09 | ERROR    | __main__ | _abort:170 | Price is required for LIMIT orders.
+2026-06-08 13:43:58 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:43:58 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:43:58 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:43:58 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:43:58 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906438274, 'signature': '***'}
+2026-06-08 13:43:59 | DEBUG    | bot.client | _request:121 | ← HTTP 401  body={"code":-2014,"msg":"API-key format invalid."}
+2026-06-08 13:43:59 | ERROR    | bot.client | _request:136 | Binance API error -2014: API-key format invalid.
+2026-06-08 13:43:59 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -2014: API-key format invalid.
+2026-06-08 13:45:01 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:45:01 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:45:01 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:45:01 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:45:01 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906501247, 'signature': '***'}
+2026-06-08 13:45:02 | DEBUG    | bot.client | _request:121 | ← HTTP 401  body={"code":-2014,"msg":"API-key format invalid."}
+2026-06-08 13:45:02 | ERROR    | bot.client | _request:136 | Binance API error -2014: API-key format invalid.
+2026-06-08 13:45:02 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -2014: API-key format invalid.
+2026-06-08 13:47:21 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:47:21 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:47:21 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:47:21 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:47:21 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906641160, 'signature': '***'}
+2026-06-08 13:47:21 | DEBUG    | bot.client | _request:121 | ← HTTP 401  body={"code":-2014,"msg":"API-key format invalid."}
+2026-06-08 13:47:21 | ERROR    | bot.client | _request:136 | Binance API error -2014: API-key format invalid.
+2026-06-08 13:47:21 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -2014: API-key format invalid.
+2026-06-08 13:48:34 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:48:34 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:48:34 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:48:34 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:48:34 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906714237, 'signature': '***'}
+2026-06-08 13:48:35 | DEBUG    | bot.client | _request:121 | ← HTTP 401  body={"code":-2014,"msg":"API-key format invalid."}
+2026-06-08 13:48:35 | ERROR    | bot.client | _request:136 | Binance API error -2014: API-key format invalid.
+2026-06-08 13:48:35 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -2014: API-key format invalid.
+2026-06-08 13:49:21 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:49:21 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:49:21 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:49:21 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:49:21 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906761910, 'signature': '***'}
+2026-06-08 13:49:22 | DEBUG    | bot.client | _request:121 | ← HTTP 401  body={"code":-2014,"msg":"API-key format invalid."}
+2026-06-08 13:49:22 | ERROR    | bot.client | _request:136 | Binance API error -2014: API-key format invalid.
+2026-06-08 13:49:22 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -2014: API-key format invalid.
+2026-06-08 13:51:15 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2026-06-08 13:51:15 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:51:15 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 13:51:15 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 13:51:15 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780906875309, 'signature': '***'}
+2026-06-08 13:51:16 | DEBUG    | bot.client | _request:121 | ← HTTP 200  body={"orderId":14486325845,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"vRavfioQ6fugGFeGmTwWyl","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780906876985}
+2026-06-08 13:51:16 | INFO     | bot.client | place_order:169 | Order accepted: orderId=14486325845 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-08 13:51:16 | INFO     | __main__ | main:252 | Order placed successfully. orderId=14486325845
+2026-06-08 13:53:17 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001
+2026-06-08 13:53:17 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:53:17 | DEBUG    | bot.orders | place_limit_order:134 | Limit order params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '70000', 'timeInForce': 'GTC'}
+2026-06-08 13:53:17 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=70000
+2026-06-08 13:53:17 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '70000', 'timeInForce': 'GTC', 'timestamp': 1780906997744, 'signature': '***'}
+2026-06-08 13:53:18 | DEBUG    | bot.client | _request:121 | ← HTTP 200  body={"orderId":14486426527,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"bMmOJcOHkQWiEWovDa9H0B","price":"70000.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780906999504}
+2026-06-08 13:53:18 | INFO     | bot.client | place_order:169 | Order accepted: orderId=14486426527 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-08 13:53:18 | INFO     | __main__ | main:252 | Order placed successfully. orderId=14486426527
+2026-06-08 13:53:29 | INFO     | __main__ | main:211 | Request: symbol=BTCUSDT side=BUY type=STOP_MARKET qty=0.001
+2026-06-08 13:53:29 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 13:53:29 | DEBUG    | bot.orders | place_stop_market_order:161 | Stop-Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '999999'}
+2026-06-08 13:53:29 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=STOP_MARKET qty=0.001 price=—
+2026-06-08 13:53:29 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '999999', 'timestamp': 1780907009433, 'signature': '***'}
+2026-06-08 13:53:30 | DEBUG    | bot.client | _request:121 | ← HTTP 400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-06-08 13:53:30 | ERROR    | bot.client | _request:136 | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-08 13:53:30 | ERROR    | __main__ | _abort:170 | Binance API rejected the order — code -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-08 14:00:12 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 14:00:12 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '100'}
+2026-06-08 14:00:12 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=100 price=—
+2026-06-08 14:00:12 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '100', 'timestamp': 1780907412977, 'signature': '***'}
+2026-06-08 14:00:13 | DEBUG    | bot.client | _request:121 | ← HTTP 400  body={"code":-2019,"msg":"Margin is insufficient."}
+2026-06-08 14:00:13 | ERROR    | bot.client | _request:136 | Binance API error -2019: Margin is insufficient.
+2026-06-08 14:00:13 | ERROR    | __main__ | main:227 | BinanceAPIError -2019: Margin is insufficient.
+2026-06-08 14:01:23 | DEBUG    | bot.client | __init__:58 | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-08 14:01:23 | DEBUG    | bot.orders | place_market_order:108 | Market order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-08 14:01:23 | INFO     | bot.client | place_order:160 | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=—
+2026-06-08 14:01:23 | DEBUG    | bot.client | _request:104 | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780907483495, 'signature': '***'}
+2026-06-08 14:01:24 | DEBUG    | bot.client | _request:121 | ← HTTP 200  body={"orderId":14486798744,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"fh3AfshP17spAP6KF8DVYA","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780907485247}
+2026-06-08 14:01:24 | INFO     | bot.client | place_order:169 | Order accepted: orderId=14486798744 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-08 14:01:24 | INFO     | __main__ | main:223 | Interactive order placed. orderId=14486798744 status=NEW
